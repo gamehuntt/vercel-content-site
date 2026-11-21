@@ -1,7 +1,7 @@
-/* ===== /articles : site navbar on top, plain #1C1C31 page (no hero artwork) ===== */
+/* ===== /articles : site navbar on top, plain #0f0f26 page (no hero artwork) ===== */
 .arts-page {
   min-height: 100vh;
-  background: #1c1c31;
+  background: #0f0f26;
 }
 
 .arts-wrap { position: relative; max-width: 72rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; } /* = max-w-6xl px-6 py-16 */
@@ -12,7 +12,7 @@
 .arts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
 .arts-card {
   position: relative; display: flex; flex-direction: column; overflow: hidden;
-  background: #1c1c31; border: 1px solid rgb(255 255 255 / 0.16); border-radius: 0.75rem;
+  background: #0f0f26; border: 1px solid rgb(255 255 255 / 0.16); border-radius: 0.75rem;
 }
 .arts-cover {
   display: block; width: 100%; aspect-ratio: 2.16 / 1; object-fit: cover;
@@ -38,3 +38,6 @@
   .arts-wrap { padding: 2.5rem 1rem 5rem; }
   .arts-grid { grid-template-columns: 1fr; }
 }
+
+/* page background #0F0F26 on /articles only: the html/body background and the footer's "An Artist" block (it matches the page colour) */
+html:has(.dark):has(.arts-page) { --background: #0f0f26; background: #0f0f26; --hb-page: #0f0f26; --hb-artist: #121229; }
